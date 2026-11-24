@@ -23,7 +23,7 @@ public class Product {
     private int stockQuantity;
 
     // 2. Constructors
-
+    
     // Default constructor (required by JPA / Hibernate)
     public Product() {
     }
