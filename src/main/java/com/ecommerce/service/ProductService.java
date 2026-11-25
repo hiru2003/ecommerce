@@ -1,12 +1,13 @@
 package com.ecommerce.service;
 
-import com.ecommerce.model.Product;
-import com.ecommerce.repository.ProductRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.ecommerce.model.Product;
+import com.ecommerce.repository.ProductRepository;
 
 @Service
 public class ProductService {
@@ -18,7 +19,7 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    // Get all products
+    // Get all products.
     public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
